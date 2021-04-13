@@ -21,6 +21,32 @@
       "oF" : 0,
       "pg" : 0
     },
+    "\/deploy\/img\/header\/artscape_logo.png" : {
+      "ft" : 32768,
+      "iS" : 20049,
+      "oA" : 0,
+      "oAP" : "\/deploy\/img\/header\/artscape_logo.png",
+      "oF" : 0,
+      "oIPL" : 0,
+      "opt" : 0,
+      "oT" : 1,
+      "ou" : "lpckwebp-none",
+      "q" : 100,
+      "rq" : 75
+    },
+    "\/deploy\/img\/section1\/resizedHDSydmonauts by Amigo & Amigo Artscape 2019 Photo Credit Edwin Remsberg_0.png" : {
+      "ft" : 32768,
+      "iS" : 2067289,
+      "oA" : 0,
+      "oAP" : "\/deploy\/img\/section1\/resizedHDSydmonauts by Amigo & Amigo Artscape 2019 Photo Credit Edwin Remsberg_0.png",
+      "oF" : 0,
+      "oIPL" : 0,
+      "opt" : 0,
+      "oT" : 1,
+      "ou" : "lpckwebp-none",
+      "q" : 100,
+      "rq" : 75
+    },
     "\/deploy\/img\/section1\/Sydmonauts by Amigo & Amigo Artscape 2019 Photo Credit Edwin Remsberg_0.jpeg" : {
       "ft" : 16384,
       "iS" : 3332157,
@@ -133,14 +159,6 @@
       "oAP" : "\/deploy\/index.html",
       "oF" : 0
     },
-    "\/deploy\/js\/index.html" : {
-      "cB" : 0,
-      "ft" : 8192,
-      "hM" : 0,
-      "oA" : 0,
-      "oAP" : "\/deploy\/js\/index.html",
-      "oF" : 0
-    },
     "\/design\/structure-tags.sketch" : {
       "cB" : 0,
       "ft" : 8192,
@@ -179,6 +197,14 @@
       "hM" : 0,
       "oA" : 1,
       "oAP" : "\/dev\/header.html",
+      "oF" : 0
+    },
+    "\/dev\/index.html" : {
+      "cB" : 0,
+      "ft" : 8192,
+      "hM" : 0,
+      "oA" : 0,
+      "oAP" : "\/dev\/index.html",
       "oF" : 0
     },
     "\/dev\/index.kit" : {

@@ -422,15 +422,14 @@ img {
   width: 100%;
 }
 
-#new img {
+#new ul li img {
   max-width: 100vw;
 }
-
-#new-content {
+#new ul li section {
   display: grid;
   grid-template-columns: 16px auto 16px;
-  grid-template-areas: ". new-content .";
+  grid-template-areas: ". new .";
 }
-#new-content > div {
-  grid-area: new-content;
+#new ul li section > div {
+  grid-area: new;
 }

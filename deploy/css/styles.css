@@ -408,6 +408,18 @@ textarea {
   max-width: 100%;
 }
 
-#history .center-text {
-  text-align: center;
+@media (min-width: 1200px) {
+  #new {
+    display: grid;
+    grid-template-columns: auto 1200px auto;
+    grid-template-areas: ". skills .";
+  }
+}
+#new #new-content {
+  display: grid;
+  grid-template-columns: 16px auto 16px;
+  grid-template-areas: ". new .";
+}
+#new #new-content > div {
+  grid-area: new;
 }

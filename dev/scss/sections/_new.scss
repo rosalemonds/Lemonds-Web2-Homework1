@@ -6,7 +6,7 @@
 #new {
     
     img {
-        max-width: 100%;
+        width: 100%;
     }
 
 @include xl {
@@ -14,7 +14,7 @@
     grid-template-columns: auto 1200px auto;
     grid-template-areas: ". skills .";
 
-    
+
 }
 
     #new-content {

@@ -405,15 +405,15 @@ textarea {
     Hero
 ===================*/
 #hero img {
-  max-width: 100%;
+  width: 100%;
 }
 
 #hero2 img {
-  max-width: 100%;
+  width: 100%;
 }
 
 #new img {
-  max-width: 100%;
+  width: 100%;
 }
 @media (min-width: 1200px) {
   #new {

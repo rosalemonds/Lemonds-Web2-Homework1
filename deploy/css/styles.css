@@ -421,5 +421,5 @@ textarea {
   grid-template-areas: ". new .";
 }
 #new #new-content > div {
-  grid-area: new;
+  grid-area: new-content;
 }

@@ -2,8 +2,15 @@
 
 
 //write classes and id
+//ids for ur sections
 #new {
+    
+@include xl {
     display: grid;
+    grid-template-columns: auto 1200px auto;
+    grid-template-areas: ". skills .";
+}
+    
 
     #new-content {
         display: grid;

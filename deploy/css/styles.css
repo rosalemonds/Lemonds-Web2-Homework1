@@ -360,6 +360,9 @@ ul {
   margin: 0;
   padding: 0;
 }
+ul li {
+  list-style: none;
+}
 
 /* =============
     Typography
@@ -394,3 +397,17 @@ textarea {
 /* =============
     Footer
 ============= */
+/* ==================
+    Hero
+===================*/
+#hero img {
+  max-width: 100%;
+}
+
+#hero2 img {
+  max-width: 100%;
+}
+
+#history .center-text {
+  text-align: center;
+}

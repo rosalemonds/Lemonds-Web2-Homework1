@@ -404,6 +404,7 @@ header {
   grid-template-areas: ". header .";
 }
 header > div {
+  border: 1px solid red;
   grid-area: header;
 }
 

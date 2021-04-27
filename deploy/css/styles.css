@@ -418,6 +418,9 @@ textarea {
     grid-template-columns: auto 1200px auto;
     grid-template-areas: ". skills .";
   }
+  #new img {
+    max-width: 100%;
+  }
 }
 #new #new-content {
   display: grid;

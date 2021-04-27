@@ -415,7 +415,7 @@ header > div {
     Hero
 ===================*/
 #hero img {
-  width: 100%;
+  max-width: 100%;
 }
 
 #hero2 img {
@@ -425,18 +425,12 @@ header > div {
 #new img {
   width: 100%;
 }
-@media (min-width: 1200px) {
-  #new {
-    display: grid;
-    grid-template-columns: auto 1200px auto;
-    grid-template-areas: ". new-content .";
-  }
-}
-#new #new-content {
+
+#new-content {
   display: grid;
   grid-template-columns: 16px auto 16px;
   grid-template-areas: ". new-content .";
 }
-#new #new-content > div {
+#new-content > div {
   grid-area: new-content;
 }

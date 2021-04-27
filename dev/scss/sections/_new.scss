@@ -9,12 +9,6 @@
         width: 100%;
     }
 
-@include xl {
-    display: grid;
-    grid-template-columns: auto 1200px auto;
-    grid-template-areas: ". new-content .";
-
-
 }
 
     #new-content {
@@ -26,4 +20,3 @@
             grid-area: new-content;
         }
     }
-}

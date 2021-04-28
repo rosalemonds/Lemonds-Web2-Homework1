@@ -404,7 +404,6 @@ header {
   grid-template-areas: ". header .";
 }
 header > div {
-  border: 1px solid red;
   grid-area: header;
 }
 
@@ -414,11 +413,26 @@ header > div {
 /* ==================
     Hero
 ===================*/
-img {
+#hero img {
   max-width: 100%;
 }
 
-#hero2 img {
+ul li {
+  display: grid;
+  grid-template-columns: 16px auto 16px;
+  grid-template-areas: ". hero .";
+}
+ul li a {
+  grid-area: hero;
+}
+
+/* ==================
+    Hero2
+===================*/
+#hero2 ul {
+  display: grid;
+}
+#hero2 ul li img {
   width: 100%;
 }
 

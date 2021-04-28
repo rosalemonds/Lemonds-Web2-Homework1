@@ -414,7 +414,7 @@ header > div {
     Hero
 ===================*/
 #hero img {
-  max-width: 100%;
+  width: 100vw;
 }
 
 ul li {
@@ -434,6 +434,16 @@ ul li a {
 }
 #hero2 ul li img {
   width: 100%;
+}
+
+#hero2imgs ul {
+  display: grid;
+}
+#hero2imgs ul li img {
+  width: 100vw;
+}
+#hero2imgs ul #hero2-3 {
+  display: none;
 }
 
 #new ul li img {

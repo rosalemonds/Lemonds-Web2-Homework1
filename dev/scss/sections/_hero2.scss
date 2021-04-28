@@ -2,18 +2,32 @@
     Hero2
 ===================*/
 
+
+
 #hero2 {
 
     ul {
         display: grid;
-
         li {
-
             img {
                 width: 100%;
             }
         }
+    }
+}
 
-       
+#hero2imgs {
+
+    ul {
+        display: grid;
+        li {
+            img {
+                width: 100vw;
+            }
+        }
+
+        #hero2-3{
+            display: none;
+        }
     }
 }

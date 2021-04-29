@@ -7,16 +7,16 @@
         width: 100vw;
     }
     
-}
-
-ul{
-    li{
-        display: grid;
-        grid-template-columns: 16px auto 16px;
-        grid-template-areas: ". hero .";
-
-        a{
-            grid-area: hero;
+    ul{
+        li{
+            display: grid;
+            grid-template-columns: 16px auto 16px;
+            grid-template-areas: ". hero .";
+    
+            a{
+                grid-area: hero;
+            }
         }
     }
 }
+

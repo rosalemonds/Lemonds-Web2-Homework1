@@ -415,9 +415,6 @@ footer {
   grid-template-columns: 16px auto 16px;
   grid-template-areas: ". footer .";
 }
-footer div {
-  grid-area: footer;
-}
 
 /* ==================
     Hero
@@ -425,13 +422,12 @@ footer div {
 #hero img {
   width: 100vw;
 }
-
-ul li {
+#hero ul li {
   display: grid;
   grid-template-columns: 16px auto 16px;
   grid-template-areas: ". hero .";
 }
-ul li a {
+#hero ul li a {
   grid-area: hero;
 }
 
@@ -455,14 +451,9 @@ ul li a {
   display: none;
 }
 
-#new ul li img {
-  width: 100vw;
-}
-#new ul li section {
+#new > div ul {
   display: grid;
-  grid-template-columns: 16px auto 16px;
-  grid-template-areas: ". new .";
 }
-#new ul li section > div {
-  grid-area: new;
+#new > div ul li img {
+  width: 100%;
 }

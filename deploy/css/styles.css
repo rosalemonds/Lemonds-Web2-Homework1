@@ -400,22 +400,75 @@ textarea {
 ============= */
 header {
   display: grid;
-  grid-template-columns: 16px auto 16px;
+  grid-template-columns: auto 600px auto;
   grid-template-areas: ". header .";
 }
 header > div {
   grid-area: header;
 }
+@media (min-width: 768px) {
+  header section img {
+    width: 650px;
+  }
+}
+@media (min-width: 1024px) {
+  header section img {
+    width: 700px;
+  }
+}
 
 /* =============
     Footer
 ============= */
-footer {
-  display: grid;
-  grid-template-columns: 16px auto 16px;
-  grid-template-areas: ". footer .";
+@media (min-width: 1200px) {
+  footer {
+    display: grid;
+    grid-template-areas: ". footer .";
+    grid-template-columns: auto 1200px auto;
+  }
 }
-
+footer > div {
+  display: grid;
+  gap: 24px;
+}
+@media (min-width: 768px) {
+  footer > div {
+    grid-template-areas: "locations newsletter" "locations social";
+    grid-template-columns: 50% auto;
+  }
+}
+@media (min-width: 1024px) {
+  footer > div {
+    grid-template-areas: "locations newsletter social";
+    grid-template-columns: repeat(3, 1fr);
+  }
+}
+@media (min-width: 1200px) {
+  footer > div {
+    grid-area: footer;
+  }
+}
+@media (min-width: 768px) {
+  footer > div #locations {
+    grid-area: locations;
+  }
+}
+@media (min-width: 768px) {
+  footer > div #newsletter {
+    grid-area: newsletter;
+  }
+}
+footer > div #newsletter form input {
+  border: none;
+}
+@media (min-width: 768px) {
+  footer > div #social {
+    grid-area: social;
+  }
+}
+footer > div #social ul {
+  border: none;
+}
 /* ==================
     Hero
 ===================*/
@@ -438,14 +491,21 @@ footer {
   display: grid;
 }
 #hero2 ul li img {
-  width: 100%;
+  width: 15%;
 }
 
 #hero2imgs ul {
   display: grid;
 }
 #hero2imgs ul li img {
-  width: 100vw;
+  width: 100%;
+}
+@media (min-width: 768px) {
+  #hero2imgs ul {
+    grid-area: hero2imgs;
+    grid-template-areas: "hero2imgs hero2imgs";
+    grid-template-columns: 55% 45%;
+  }
 }
 #hero2imgs ul #hero2-3 {
   display: none;

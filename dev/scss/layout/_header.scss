@@ -4,10 +4,22 @@
 
 header{
     display: grid;
-    grid-template-columns: 16px auto 16px;
+    grid-template-columns: auto 600px auto;
     grid-template-areas: ". header .";
 
     >div{
         grid-area: header;
+    }
+
+    section{
+        img{
+            @include md {
+                width: 650px;
+            }
+
+            @include lg {
+                width: 700px;
+            }
+        }
     }
 }

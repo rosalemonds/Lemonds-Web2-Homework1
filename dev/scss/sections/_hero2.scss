@@ -10,7 +10,7 @@
         display: grid;
         li {
             img {
-                width: 100%;
+                width:15%;
             }
         }
     }
@@ -22,12 +22,21 @@
         display: grid;
         li {
             img {
-                width: 100vw;
+                width: 100%;
             }
         }
+
+        @include md {
+            grid-area: hero2imgs;
+            grid-template-areas: "hero2imgs hero2imgs";
+            grid-template-columns: 55% 45%;
+        }
+
 
         #hero2-3{
             display: none;
         }
     }
+
+    
 }

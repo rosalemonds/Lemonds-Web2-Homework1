@@ -2,10 +2,27 @@
     >div {
         ul {
             display: grid;
+            gap: 16px;
+
             li {
                 img {
                     width: 100%;
                 }
+            }
+
+            @include md {
+                grid-area: new;
+                grid-template-columns: auto auto;
+                grid-template-areas: "new new";
+
+                
+
+            }
+
+            @include lg {
+                grid-template-columns: auto auto auto;
+                grid-template-areas: "new none new";
+
             }
         }
     }

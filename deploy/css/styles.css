@@ -513,7 +513,21 @@ footer > div #social ul {
 
 #new > div ul {
   display: grid;
+  gap: 16px;
 }
 #new > div ul li img {
   width: 100%;
+}
+@media (min-width: 768px) {
+  #new > div ul {
+    grid-area: new;
+    grid-template-columns: auto auto;
+    grid-template-areas: "new new";
+  }
+}
+@media (min-width: 1024px) {
+  #new > div ul {
+    grid-template-columns: auto auto auto;
+    grid-template-areas: "new none new";
+  }
 }

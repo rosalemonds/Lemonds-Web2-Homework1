@@ -1,29 +1,63 @@
 #new {
-    >div {
-        ul {
+    ul {
+        display: grid;
+        gap: 16px;
+        grid-area: new;
+
+
+        @include md {
             display: grid;
-            gap: 16px;
+            grid-template-columns: repeat(4, 1fr);
+            grid-template-areas:
+                "first first second second"
+                "third third fourth fourth"
+                ". fifth fifth .";
 
-            li {
-                img {
-                    width: 100%;
-                }
-            }
 
-            @include md {
-                grid-area: new;
-                grid-template-columns: auto auto;
-                grid-template-areas: "new new";
+        }
 
-                
+        @include lg {
+            grid-template-columns: repeat(6, 1fr);
+            grid-template-areas:
+                "first first second second third third"
+                ". fourth fourth fifth fifth .";
 
-            }
+        }
 
-            @include lg {
-                grid-template-columns: auto auto auto;
-                grid-template-areas: "new none new";
-
+        #first{
+            @include md{
+                grid-area: first;
             }
         }
+
+        #second{
+            @include md{
+                grid-area: second;
+            }
+        }
+        #third{
+            @include md{
+                grid-area: third;
+            }
+        }
+        #fourth{
+            @include md{
+                grid-area: fourth;
+            }
+        }
+        #fifth{
+            @include md{
+                grid-area: fifth;
+            }
+        }
+
+        li {
+
+            img {
+                width: 100%;
+            }
+        }
+
+
     }
 }

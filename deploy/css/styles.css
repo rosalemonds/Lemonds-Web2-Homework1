@@ -400,21 +400,16 @@ textarea {
 ============= */
 header {
   display: grid;
-  grid-template-columns: auto 600px auto;
+  grid-template-columns: 150px auto 150px;
   grid-template-areas: ". header .";
+}
+header img {
+  background-position: center;
+  max-width: 1250px;
+  height: auto;
 }
 header > div {
   grid-area: header;
-}
-@media (min-width: 768px) {
-  header section img {
-    width: 650px;
-  }
-}
-@media (min-width: 1024px) {
-  header section img {
-    width: 700px;
-  }
 }
 
 /* =============
@@ -511,23 +506,49 @@ footer > div #social ul {
   display: none;
 }
 
-#new > div ul {
+#new ul {
   display: grid;
   gap: 16px;
-}
-#new > div ul li img {
-  width: 100%;
+  grid-area: new;
 }
 @media (min-width: 768px) {
-  #new > div ul {
-    grid-area: new;
-    grid-template-columns: auto auto;
-    grid-template-areas: "new new";
+  #new ul {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    grid-template-areas: "first first second second" "third third fourth fourth" ". fifth fifth .";
   }
 }
 @media (min-width: 1024px) {
-  #new > div ul {
-    grid-template-columns: auto auto auto;
-    grid-template-areas: "new none new";
+  #new ul {
+    grid-template-columns: repeat(6, 1fr);
+    grid-template-areas: "first first second second third third" ". fourth fourth fifth fifth .";
   }
+}
+@media (min-width: 768px) {
+  #new ul #first {
+    grid-area: first;
+  }
+}
+@media (min-width: 768px) {
+  #new ul #second {
+    grid-area: second;
+  }
+}
+@media (min-width: 768px) {
+  #new ul #third {
+    grid-area: third;
+  }
+}
+@media (min-width: 768px) {
+  #new ul #fourth {
+    grid-area: fourth;
+  }
+}
+@media (min-width: 768px) {
+  #new ul #fifth {
+    grid-area: fifth;
+  }
+}
+#new ul li img {
+  width: 100%;
 }

@@ -2,24 +2,22 @@
     Header
 ============= */
 
-header{
+header {
     display: grid;
-    grid-template-columns: auto 600px auto;
+    grid-template-columns: 150px auto 150px;
     grid-template-areas: ". header .";
 
-    >div{
+    
+    
+    img{
+        background-position: center;
+        max-width: 1250px;
+        height: auto;
+    }
+
+    >div {
         grid-area: header;
     }
 
-    section{
-        img{
-            @include md {
-                width: 650px;
-            }
 
-            @include lg {
-                width: 700px;
-            }
-        }
-    }
 }

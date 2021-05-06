@@ -1,28 +1,31 @@
 #new {
+
+    @include md {
+        display: grid;
+        grid-template-columns: repeat(4, 1fr);
+        grid-template-areas:
+            "first first second second"
+            "third third fourth fourth"
+            ". fifth fifth .";
+
+
+    }
+
+    @include lg {
+        grid-template-columns: repeat(6, 1fr);
+        grid-template-areas:
+            "first first second second third third"
+            ". fourth fourth fifth fifth .";
+
+    }
+    
     ul {
         display: grid;
         gap: 16px;
         grid-area: new;
 
 
-        @include md {
-            display: grid;
-            grid-template-columns: repeat(4, 1fr);
-            grid-template-areas:
-                "first first second second"
-                "third third fourth fourth"
-                ". fifth fifth .";
-
-
-        }
-
-        @include lg {
-            grid-template-columns: repeat(6, 1fr);
-            grid-template-areas:
-                "first first second second third third"
-                ". fourth fourth fifth fifth .";
-
-        }
+        
 
         #first{
             @include md{

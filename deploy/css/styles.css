@@ -406,7 +406,6 @@ header {
 header img {
   background-position: center;
   max-width: 1250px;
-  height: auto;
 }
 header > div {
   grid-area: header;
@@ -506,49 +505,49 @@ footer > div #social ul {
   display: none;
 }
 
-#new ul {
-  display: grid;
-  gap: 16px;
-  grid-area: new;
-}
 @media (min-width: 768px) {
-  #new ul {
+  #new {
     display: grid;
     grid-template-columns: repeat(4, 1fr);
     grid-template-areas: "first first second second" "third third fourth fourth" ". fifth fifth .";
   }
 }
 @media (min-width: 1024px) {
-  #new ul {
+  #new {
+    display: grid;
     grid-template-columns: repeat(6, 1fr);
     grid-template-areas: "first first second second third third" ". fourth fourth fifth fifth .";
   }
 }
+#new > div ul {
+  gap: 16px;
+  grid-area: new;
+}
 @media (min-width: 768px) {
-  #new ul #first {
+  #new > div ul #first {
     grid-area: first;
   }
 }
 @media (min-width: 768px) {
-  #new ul #second {
+  #new > div ul #second {
     grid-area: second;
   }
 }
 @media (min-width: 768px) {
-  #new ul #third {
+  #new > div ul #third {
     grid-area: third;
   }
 }
 @media (min-width: 768px) {
-  #new ul #fourth {
+  #new > div ul #fourth {
     grid-area: fourth;
   }
 }
 @media (min-width: 768px) {
-  #new ul #fifth {
+  #new > div ul #fifth {
     grid-area: fifth;
   }
 }
-#new ul li img {
+#new > div ul li img {
   width: 100%;
 }

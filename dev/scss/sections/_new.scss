@@ -12,55 +12,58 @@
     }
 
     @include lg {
+        display: grid;
         grid-template-columns: repeat(6, 1fr);
         grid-template-areas:
             "first first second second third third"
             ". fourth fourth fifth fifth .";
 
     }
+    >div{
+        ul {
+            
+            gap: 16px;
+            grid-area: new;
     
-    ul {
-        display: grid;
-        gap: 16px;
-        grid-area: new;
-
-
-        
-
-        #first{
-            @include md{
-                grid-area: first;
+    
+            
+    
+            #first{
+                @include md{
+                    grid-area: first;
+                }
             }
-        }
-
-        #second{
-            @include md{
-                grid-area: second;
+    
+            #second{
+                @include md{
+                    grid-area: second;
+                }
             }
-        }
-        #third{
-            @include md{
-                grid-area: third;
+            #third{
+                @include md{
+                    grid-area: third;
+                }
             }
-        }
-        #fourth{
-            @include md{
-                grid-area: fourth;
+            #fourth{
+                @include md{
+                    grid-area: fourth;
+                }
             }
-        }
-        #fifth{
-            @include md{
-                grid-area: fifth;
+            #fifth{
+                @include md{
+                    grid-area: fifth;
+                }
             }
-        }
-
-        li {
-
-            img {
-                width: 100%;
+    
+            li {
+    
+                img {
+                    width: 100%;
+                }
             }
+    
+    
         }
-
-
     }
+    
 }

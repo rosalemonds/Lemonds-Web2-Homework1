@@ -242,6 +242,19 @@
       "q" : 100,
       "rq" : 75
     },
+    "\/deploy\/img\/section3\/bruhACANCELLEDunnamed.png" : {
+      "ft" : 32768,
+      "iS" : 158421,
+      "oA" : 0,
+      "oAP" : "\/deploy\/img\/section3\/bruhACANCELLEDunnamed.png",
+      "oF" : 0,
+      "oIPL" : 0,
+      "opt" : 0,
+      "oT" : 1,
+      "ou" : "lpckwebp-none",
+      "q" : 100,
+      "rq" : 75
+    },
     "\/deploy\/img\/section3\/CANCELLEDunnamed.jpeg" : {
       "ft" : 16384,
       "iS" : 123278,
@@ -355,6 +368,19 @@
       "oF" : 0,
       "oIPL" : 0,
       "opt" : 0,
+      "ou" : "lpckwebp-none",
+      "q" : 100,
+      "rq" : 75
+    },
+    "\/deploy\/img\/section3\/smallernowA_H4ISSSO3XNBUNPBD2QYCZU5RQY.png" : {
+      "ft" : 32768,
+      "iS" : 149798,
+      "oA" : 0,
+      "oAP" : "\/deploy\/img\/section3\/smallernowA_H4ISSSO3XNBUNPBD2QYCZU5RQY.png",
+      "oF" : 0,
+      "oIPL" : 0,
+      "opt" : 0,
+      "oT" : 1,
       "ou" : "lpckwebp-none",
       "q" : 100,
       "rq" : 75
